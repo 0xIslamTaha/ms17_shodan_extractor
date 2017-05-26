@@ -1,12 +1,14 @@
-# ${1:ms17-010 Shodan Extractor}
+# ms17-010 Shodan Extractor
 Simple script to extract machines which are infected with ms17-010 vulnerability. However there are many alarms asking to patch machines, you will find alot of infected ones.
 
 # Pre-requests:
-You should have an upgrade shodan API_KYE. You can get one from their web site.
+- An upgrade shodan API_KYE. You can get one from their web site.
+- pip3 install shodan termcolor
+- nmap 7.40
 
 # Usage: 
 ```python
-python3 shodanExtractor.py -a <you_api_key> -s "port:445 os:'7'" -l 100
+sudo python3 ms17Extractor.py -a <you_api_key> -s "port:445 os:'7'" -l 10
 ```
 
 # Disclaimer:

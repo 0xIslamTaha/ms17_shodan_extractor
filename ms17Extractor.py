@@ -5,7 +5,7 @@ import argparse
 import shlex
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-a", dest ="api_key", help="Shodan API key")
+parser.add_argument("-a", dest ="api_key", ,type=str ,help="Shodan API key")
 parser.add_argument("-s", dest = "search_query", help="Search query")
 parser.add_argument("-l", dest = "limit", default = 100, help="Search results' limit")
 
